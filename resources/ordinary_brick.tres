@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="NormalBrickData" load_steps=6 format=3 uid="uid://2kq4hwd4s3qr"]
+
+[ext_resource type="Script" uid="uid://cqbx32phb6mtp" path="res://scripts/normal_brick_data.gd" id="1_3f7k8"]
+[ext_resource type="Script" uid="uid://dvmvxir27kr84" path="res://scripts/tile_identifier.gd" id="1_3phb2"]
+
+[sub_resource type="Resource" id="Resource_3phb2"]
+script = ExtResource("1_3phb2")
+source_id = 0
+atlas_coordinate = Vector2i(0, 0)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[sub_resource type="Resource" id="Resource_yy0fy"]
+script = ExtResource("1_3phb2")
+source_id = 0
+atlas_coordinate = Vector2i(2, 1)
+alternative_tile = 1
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[sub_resource type="Resource" id="Resource_0nb2m"]
+script = ExtResource("1_3phb2")
+source_id = 0
+atlas_coordinate = Vector2i(3, 1)
+alternative_tile = 1
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[resource]
+script = ExtResource("1_3f7k8")
+tile_name = "ordinary_brick"
+tile_identifiers = Array[ExtResource("1_3phb2")]([SubResource("Resource_3phb2"), SubResource("Resource_yy0fy"), SubResource("Resource_0nb2m")])
+metadata/_custom_type_script = "uid://cqbx32phb6mtp"

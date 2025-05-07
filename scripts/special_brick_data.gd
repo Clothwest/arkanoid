@@ -1,0 +1,1 @@
+class_name SpecialBrickData extends BrickData

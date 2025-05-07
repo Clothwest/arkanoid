@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://nvxsgva526cb"]
+
+[ext_resource type="Script" uid="uid://dou88a8vghis3" path="res://scripts/tittle_screen.gd" id="1_frxte"]
+[ext_resource type="Texture2D" uid="uid://d0asd28jwljas" path="res://assets/tilemap-backgrounds_packed.png" id="2_esoai"]
+
+[node name="TittleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_frxte")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(617, 307)
+scale = Vector2(10, 10)
+texture = ExtResource("2_esoai")
+region_enabled = true
+region_rect = Rect2(32, 0, 160, 72)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Arkanoid"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+
+[node name="PlayButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+text = "Play"
+
+[node name="OptionsButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="ExitButton" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]

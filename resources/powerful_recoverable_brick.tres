@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="RecoverableBrickData" load_steps=6 format=3 uid="uid://b8wxkg3n5qeb4"]
+
+[ext_resource type="Script" uid="uid://rnj0km7uw8sm" path="res://scripts/recoverable_brick_data.gd" id="1_v3e7e"]
+[ext_resource type="Script" uid="uid://dvmvxir27kr84" path="res://scripts/tile_identifier.gd" id="2_kh6bu"]
+
+[sub_resource type="Resource" id="Resource_v3e7e"]
+script = ExtResource("2_kh6bu")
+source_id = 0
+atlas_coordinate = Vector2i(1, 0)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[sub_resource type="Resource" id="Resource_kh6bu"]
+script = ExtResource("2_kh6bu")
+source_id = 0
+atlas_coordinate = Vector2i(3, 0)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[sub_resource type="Resource" id="Resource_j0xw2"]
+script = ExtResource("2_kh6bu")
+source_id = 0
+atlas_coordinate = Vector2i(4, 0)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[resource]
+script = ExtResource("1_v3e7e")
+recovery_cooldown = 0.5
+tile_name = "powerful_recoverable_brick"
+tile_identifiers = Array[ExtResource("2_kh6bu")]([SubResource("Resource_v3e7e"), SubResource("Resource_kh6bu"), SubResource("Resource_j0xw2")])
+metadata/_custom_type_script = "uid://rnj0km7uw8sm"

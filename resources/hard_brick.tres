@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="NormalBrickData" load_steps=8 format=3 uid="uid://c0c5608wbqta0"]
+
+[ext_resource type="Script" uid="uid://dvmvxir27kr84" path="res://scripts/tile_identifier.gd" id="1_lau0g"]
+[ext_resource type="Script" uid="uid://cqbx32phb6mtp" path="res://scripts/normal_brick_data.gd" id="1_p50u4"]
+
+[sub_resource type="Resource" id="Resource_lau0g"]
+script = ExtResource("1_lau0g")
+source_id = 0
+atlas_coordinate = Vector2i(2, 0)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[sub_resource type="Resource" id="Resource_tvmup"]
+script = ExtResource("1_lau0g")
+source_id = 0
+atlas_coordinate = Vector2i(0, 1)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[sub_resource type="Resource" id="Resource_px8qo"]
+script = ExtResource("1_lau0g")
+source_id = 0
+atlas_coordinate = Vector2i(1, 1)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[sub_resource type="Resource" id="Resource_sokwh"]
+script = ExtResource("1_lau0g")
+source_id = 0
+atlas_coordinate = Vector2i(2, 1)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[sub_resource type="Resource" id="Resource_8ylt4"]
+script = ExtResource("1_lau0g")
+source_id = 0
+atlas_coordinate = Vector2i(3, 1)
+alternative_tile = 0
+metadata/_custom_type_script = "uid://dvmvxir27kr84"
+
+[resource]
+script = ExtResource("1_p50u4")
+tile_name = "hard_brick"
+tile_identifiers = Array[ExtResource("1_lau0g")]([SubResource("Resource_lau0g"), SubResource("Resource_tvmup"), SubResource("Resource_px8qo"), SubResource("Resource_sokwh"), SubResource("Resource_8ylt4")])
+metadata/_custom_type_script = "uid://cqbx32phb6mtp"
